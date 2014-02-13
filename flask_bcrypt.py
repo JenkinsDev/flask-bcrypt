@@ -144,7 +144,6 @@ class Bcrypt(object):
         
         if not password:
             raise ValueError('Password must be non-empty.')
-        
         if rounds is None:
             rounds = self._log_rounds
         password = str(password)
